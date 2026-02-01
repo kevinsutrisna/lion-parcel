@@ -26,7 +26,7 @@ docker-compose up -d
 - URL: http://localhost:8003
 - Username: airflow
 - Password: airflow
-Run the DAG to populate DB
+- Run the DAG to populate DB
 
 ### View DB
 
