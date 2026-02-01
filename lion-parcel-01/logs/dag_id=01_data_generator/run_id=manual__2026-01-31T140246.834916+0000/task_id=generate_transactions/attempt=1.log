@@ -1,0 +1,17 @@
+[2026-01-31T14:02:48.024+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 01_data_generator.generate_transactions manual__2026-01-31T14:02:46.834916+00:00 [queued]>
+[2026-01-31T14:02:48.032+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 01_data_generator.generate_transactions manual__2026-01-31T14:02:46.834916+00:00 [queued]>
+[2026-01-31T14:02:48.033+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-01-31T14:02:48.045+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): generate_transactions> on 2026-01-31 14:02:46.834916+00:00
+[2026-01-31T14:02:48.050+0000] {standard_task_runner.py:60} INFO - Started process 61 to run task
+[2026-01-31T14:02:48.054+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '01_data_generator', 'generate_transactions', 'manual__2026-01-31T14:02:46.834916+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/generate_data_dag.py', '--cfg-path', '/tmp/tmpicglqwvu']
+[2026-01-31T14:02:48.056+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask generate_transactions
+[2026-01-31T14:02:48.106+0000] {task_command.py:423} INFO - Running <TaskInstance: 01_data_generator.generate_transactions manual__2026-01-31T14:02:46.834916+00:00 [running]> on host 69c816e99725
+[2026-01-31T14:02:48.178+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lion_parcel' AIRFLOW_CTX_DAG_ID='01_data_generator' AIRFLOW_CTX_TASK_ID='generate_transactions' AIRFLOW_CTX_EXECUTION_DATE='2026-01-31T14:02:46.834916+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-31T14:02:46.834916+00:00'
+[2026-01-31T14:02:48.181+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-01-31T14:02:48.182+0000] {base.py:83} INFO - Using connection ID 'SOURCE_DB' for task execution.
+[2026-01-31T14:02:48.193+0000] {generate_data_dag.py:40} INFO - Inserted 10 dummy records.
+[2026-01-31T14:02:48.195+0000] {generate_data_dag.py:50} INFO - Randomly processed soft deletes.
+[2026-01-31T14:02:48.196+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-01-31T14:02:48.207+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=01_data_generator, task_id=generate_transactions, execution_date=20260131T140246, start_date=20260131T140248, end_date=20260131T140248
+[2026-01-31T14:02:48.228+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-31T14:02:48.246+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
