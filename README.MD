@@ -61,7 +61,7 @@ docker-compose up -d
 ### Analyze single image
 
 ```bash
-curl -X POST http://localhost:8000/analyze-image -H "Content-Type: application/json" -d '{"image_url": "http://localhost:8000/images/Gambar1.jpg"}'
+curl -X POST http://localhost:8000/analyze-image -H "Content-Type: application/json" -d "{\"image_url\": \"http://localhost:8000/images/Gambar1.jpg\"}"
 ```
 
 ### Analyze all images
