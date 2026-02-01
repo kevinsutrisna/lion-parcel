@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./static/images:/app/static/images
+      - ./output:/app/output
+      - ./dataset:/app/dataset
+    environment:
+      - GITHUB_TOKEN=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
