@@ -1,6 +1,6 @@
 # Lion Parcel
 
-> Make sure your container active.
+> Make sure your docker active.
 
 ## How to run this project
 
@@ -24,6 +24,8 @@ docker-compose up -d
 ### Airflow
 
 - URL: http://localhost:8003
+- Username: airflow
+- Password: airflow
 
 ### View DB
 
