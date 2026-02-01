@@ -10,4 +10,4 @@ services:
       - ./output:/app/output
       - ./dataset:/app/dataset
     environment:
-      - GITHUB_TOKEN=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
+      - GITHUB_TOKEN=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
