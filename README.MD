@@ -5,7 +5,7 @@
 ## How to run this project
 
 ```bash
-git clone https://github.com/kevinsupandi/lion-parcel.git
+git clone https://github.com/kevinsutrisna/lion-parcel.git
 cd lion-parcel
 ```
 
