@@ -64,7 +64,7 @@ docker-compose up -d
 curl -X POST http://localhost:8000/analyze-image -H "Content-Type: application/json" -d "{\"image_url\": \"http://localhost:8000/images/Gambar1.jpg\"}"
 ```
 
-If you find {"detail":"Error processing image: Unauthorized"} contact me as the token is expired.
+If you find {"detail":"Error processing image: Unauthorized"} contact me as the token is expired or in docker-compose.yml replace GITHUB-TOKEN to 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.
 
 ### Analyze all images
 
